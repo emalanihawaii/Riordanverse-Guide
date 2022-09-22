@@ -14,7 +14,21 @@ button{
   background-color: #3498db;
   font-family: monospace;
 }
-.btn1 {
+
+/* Change background color of buttons on hover */
+.tab button:hover {
   background-color: #3173c4;
 }
 
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #75b1ff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
