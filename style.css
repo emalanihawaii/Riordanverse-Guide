@@ -1,13 +1,36 @@
 body {
   background-color: grey;
   font-family: monospace;
-  font-size: 15;
+  font-size: 150%;
 }
-img{
-  : left;
-}
+
 h1 {
   color: black;
+}
+
+h2{
+  font-size: 200%;
+}
+
+h3{
+  text-align: center;
+  font-size: 150%;
+}
+
+h4{
+  font-size: 125%;
+}
+
+h3 + ul{
+  margin-top: -15px;
+}
+
+p{
+  text-align: left;
+}
+
+br{
+  scale: 5px;
 }
 
 button{
@@ -17,35 +40,49 @@ button{
   color: black;
   background-color: #3498db;
   font-family: monospace;
-  font-size: 15;
-}
-br{
-  scale: 5;
-}
-div{
-  padding-left: 10;
+  font-size: inherit;
 }
 
-h3 + ul{
-  margin-top: -15px;
+div{
+  padding-left: 5px;
+  margin-right: 3px;
 }
+/*classnames*/
+.map{
+  max-width: 30%;
+  margin: 5px 5px 5px 5px;
+}
+
 .cat{
   border-style: solid;
   margin-bottom: 5px;
 }
 .res{
-  margin-left: 20px;
+  margin-left: 30px;
   list-style: circle;
 }
 
+.tab{
+  width: 100%;
+}
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #3173c4;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #2e65a8;
 }
 
+.tabcontent{
+  text-align: center;
+}
+
+/*ID names*/
+#staff{
+  text-align: left;
+}
+
+#heading{
+  background-color: grey;
+}
