@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-    <title>Riordanverse Guide</title>
+    <title>Greek Faction</title>
     <meta charset="utf-8">
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="./Greek-Images/chb.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Greek-style.css">
     
   </head>
   <body>
-    <div id= "heading">
-      <img src="./images/logo.png" alt = "The Riordanverse Logo" width ="84" height="120" align = "left">
-      <h1>Welcome to Riordanverse!</h1>
-      <h2>(The Nexus of Gods)</h2>
+    <div>
+      <img src="./Greek-Images/chb.png" alt = "The Riordanverse Logo" width ="auto" height="120" align = "left">
+      <h1>Camp Halfblood</h1>
+      <h2></h2>
     <!--Tabs-->
     <div class = "tab">
-      <button class ="tablinks" onclick="openTab(event, 'getting')">Getting Started</button>
-      <button class ="tablinks" onclick="openTab(event, 'about')">About World</button>
-      <button class ="tablinks" onclick="openTab(event, 'factions')" id="default">Factions</button>
-      <button class ="tablinks" onclick="openTab(event, 'blessings')" >Blessings and Legacies</button>
-      <button class ="tablinks" onclick="openTab(event, 'character')">Creating Your Character</button>
-      <button class ="tablinks" onclick="openTab(event, 'docs')">Documents</button>
+      <button class ="tablinks" onclick="openTab(event, 'character')" id = "default">Creating Your Character</button>
+      <button class ="tablinks" onclick="openTab(event, 'history')">History</button>
       <button class ="tablinks" onclick="openTab(event, 'staff')">Staff List</button>
     </div>
     
     <!--Tab files-->
-    <div id="getting" class="tabcontent" include-html = "tabs/getting.html"></div>
-    <div id="about" class ="tabcontent" include-html = "tabs/about.html"></div>
-    <div id="factions" class = "tabcontent" include-html = "tabs/factions.html"></div>
-    <div id="blessings" class ="tabcontent" include-html = "tabs/blessings.html"></div>
-    <div id="character" class ="tabcontent" include-html = "tabs/character.html"></div>
-    <div id="docs" class ="tabcontent" include-html = "tabs/docs.html"></div>
-    <div id="staff" class ="tabcontent" include-html = "tabs/staff.html"></div>
+    <div id="character" class ="tabcontent" include-html = "Greek-Tabs/Greek-Character.html"></div>
+    <div id="history" class ="tabcontent" include-html = "./Greek-Tabs/Greek-History.html"></div>
+    <div id="staff" class ="tabcontent" include-html = "./Greek-Tabs/Greek-Staff.html"></div>
     <script>
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
