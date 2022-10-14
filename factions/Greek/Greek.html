@@ -11,19 +11,21 @@
   </head>
   <body>
     <div>
-      <img src="./Greek-Images/chb.png" alt = "The Riordanverse Logo" width ="auto" height="120" align = "left">
+      <img src="./Greek-Images/chb.png" alt = "The Camp Halfblood Logo" width ="auto" height="120" align = "left">
       <h1>Camp Halfblood</h1>
-      <h2></h2>
+      <h2>For Greek Demigods</h2>
     <!--Tabs-->
     <div class = "tab">
       <button class ="tablinks" onclick="openTab(event, 'character')" id = "default">Creating Your Character</button>
       <button class ="tablinks" onclick="openTab(event, 'history')">History</button>
+      <button calss ="tablinks" onclick="openTab(event, 'gods')">Gods</button>
       <button class ="tablinks" onclick="openTab(event, 'staff')">Staff List</button>
     </div>
     
     <!--Tab files-->
     <div id="character" class ="tabcontent" include-html = "Greek-Tabs/Greek-Character.html"></div>
     <div id="history" class ="tabcontent" include-html = "./Greek-Tabs/Greek-History.html"></div>
+    <div id="gods" class ="tabcontent" include-html = "./Greek-Tabs/Greek-Gods.html"></div>
     <div id="staff" class ="tabcontent" include-html = "./Greek-Tabs/Greek-Staff.html"></div>
     <script>
       function openTab(evt, tabName) {
