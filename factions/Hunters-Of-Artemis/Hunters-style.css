@@ -69,6 +69,8 @@ div{
   margin-right: 3px;
 }
 /*classnames*/
+
+
 .map{
   max-width: 30%;
   margin: 5px 5px 5px 5px;
@@ -76,7 +78,7 @@ div{
 
 .cat{
   border-style: solid;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 .l2{
