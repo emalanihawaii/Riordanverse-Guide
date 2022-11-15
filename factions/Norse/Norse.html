@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Norse Faction</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="./Norse-Images/norse.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Norse-style.css">
+
+</head>
+
+<body>
+  <a href="../../index.html"><img src="./Norse-Images/norse.png" alt="The Hotel Valhalla Logo" width="auto" height="120" align="left"></a>
+  <h1>Hotel Valhalla</h1>
+  <h2>For Einherjar</h2>
+  <!--Tabs-->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'character')" id="default">Creating Your Character</button>
+    <button class="tablinks" onclick="openTab(event, 'history')">History</button>
+    <button class="tablinks" onclick="openTab(event, 'gods')">Gods</button>
+    <button class="tablinks" onclick="openTab(event, 'powers')">Power Lists</button>
+    <button class="tablinks" onclick="openTab(event, 'staff')">Staff List</button>
+  </div>
+
+  <!--Tab files-->
+  <div id="character" class="tabcontent" include-html="./Norse-Tabs/Norse-Character.html"></div>
+  <div id="history" class="tabcontent" include-html="./Norse-Tabs/Norse-History.html"></div>
+  <div id="gods" class="tabcontent" include-html="./Norse-Tabs/Norse-Gods.html"></div>
+  <div id="powers" class="tabcontent" include-html="./Norse-Tabs/Norse-Powers.html"></div>
+  <div id="staff" class="tabcontent" include-html="./Norse-Tabs/Norse-Staff.html"></div>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("default").click();
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>
