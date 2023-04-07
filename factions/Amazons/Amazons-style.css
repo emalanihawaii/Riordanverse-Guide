@@ -1,9 +1,9 @@
 body {
-  background-color: #e1374e;
+  background-color: #d97d89;
   border: 20px;
   font-family: monospace;
   font-size: 20px;
-  color: #b0b0b0;
+  color: #000000;
 }
 
 h1 {
@@ -58,7 +58,7 @@ button{
   border-radius:5px;
   border: 2px solid;
   
-  color: #b0b0b0;
+  color: #000000;
   background-color: #a51515;
   font-style: inherit;
   font-size: inherit;

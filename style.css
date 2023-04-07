@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: #bdb6c9;
   font-family: monospace;
   font-size: 20px;
 }
@@ -61,7 +61,7 @@ div{
 }
 /*classnames*/
 .map{
-  max-width: 30%;
+  max-width: 40%;
   margin: 5px 5px 5px 5px;
 }
 
@@ -114,5 +114,5 @@ div{
 }
 
 #heading{
-  background-color: grey;
+  background-color: #bdb6c9;
 }
