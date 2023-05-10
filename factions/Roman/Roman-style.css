@@ -1,7 +1,7 @@
 body {
   background-color: #9b5fb9;
   border: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: monospace;
   font-size: 20px;
 }
 
@@ -104,4 +104,8 @@ div{
 
 #heading{
   background-color: grey;
+}
+
+#i{
+  text-indent: 30px;
 }
