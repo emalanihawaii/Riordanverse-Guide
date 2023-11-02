@@ -107,6 +107,19 @@ div{
   text-align: center;
 }
 
+#history {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+  width: 100%;
+}
+
+#history > *{
+  flex: 1 1 0;
+}
+#history div{
+  
+}
 /*ID names*/
 #staff{
   text-align: left;
